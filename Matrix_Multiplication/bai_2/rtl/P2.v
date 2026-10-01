@@ -75,7 +75,7 @@ module P2  #(
     end
     
     // Logic của FSM
-    always @(state or start) begin
+    always @(state or start or r_last) begin
         next_state = state;
         r_clr = 0;
         r_inc = 0;
